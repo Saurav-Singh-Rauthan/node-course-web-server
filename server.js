@@ -23,6 +23,7 @@ app.use((req,res,next) => {
     next()
 })
 
+// this is the maintainence code comment if not needed
 // app.use((req,res,next) => {
 //     res.render('maintainence.hbs')
 // })
