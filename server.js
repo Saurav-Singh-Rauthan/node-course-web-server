@@ -2,12 +2,12 @@ const express = require('express')
 const hbs = require('hbs');
 const fs = require('fs');
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 hbs.registerPartials(__dirname+'/views/partials')
 
 app.set('view engine','hbs')
-q
+
 app.use(express.static(__dirname+'/public'))
 
 app.use((req,res,next) => {
